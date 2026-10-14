@@ -1,21 +1,55 @@
 # Project 1 - Using Cryptographic Tools (80 Points)
 
-## Task-1
+## Task - 1
 
-**Task Description:** Encrypt input.txt using AES in cbc mode with 128 bits. The output file is `output.enc`.  Please specify the encryption key and the IV. Please include the complete screenshot of the execution result of the command in your report. The screenshots should include your username, current directory, the openssl command, and the complete execution results.
+**Task Description:** Encrypt `input.txt` using AES in cbc mode with 128 bits. The output file is `output.enc`.  Please specify the encryption key and the IV. Please include the complete screenshot of the execution result of the command in your report. The screenshots should include your username, current directory, the `openssl` command, and the complete execution results.
 
-**_Encryption Key:_** 
+**_Encryption Key:_** 00112233445566778899aabbccddeeff
 
-**_IV:_** 
+**_IV:_** 0102030405060708090a0b0c0d0e0f10
 
 ![Image1](images/image1.png)
+
+### Command Breakdown
+
+| Part              | Meaning                              |
+| ----------------- | ------------------------------------ |
+| `openssl`         | Starts the OpenSSL tool              |
+| `enc`             | Encryption/decryption utility        |
+| `-aes-128-cbc`    | AES with a 128-bit key in CBC mode   |
+| `-e`              | Encrypt                              |
+| `-in input.txt`   | Original plaintext                   |
+| `-out output.enc` | Encrypted output                     |
+| `-K`              | Encryption key in hexadecimal        |
+| `-iv`             | Initialization vector in hexadecimal |
+
+### Discussion
+
+I used `OpenSSL` to encrypt `input.txt` using AES-128 in CBC mode. I used a 128-bit encryption key and IV to encrypt the file. The encrypted data was saved in a new file called `output.enc`. I used the `ls -l` command to check that the file was created successfully.
 
 
 ## Task-2
 
-**Task Description:** Decrypt `output.enc` and name the output file as `decrypted.txt`. Please include the complete screenshots of the execution results of the commands in your report. The screenshot should include your username, current directory, the openssl commands,  and the complete execution results.  
+**Task Description:** Decrypt `output.enc` and name the output file as `decrypted.txt`. Please include the complete screenshots of the execution results of the commands in your report. The screenshot should include your username, current directory, the `openssl` commands,  and the complete execution results.  
 
 ![Image2](images/image2.png)
+
+### Command Breakdown
+
+| Part                 | Meaning                              |
+| -------------------- | ------------------------------------ |
+| `openssl`            | Starts the OpenSSL tool              |
+| `enc`                | Encryption/decryption utility        |
+| `-aes-128-cbc`       | AES with a 128-bit key in CBC mode   |
+| `-d`                 | Decrypt                              |
+| `-in output.enc`     | Encrypted file created in task 1     |
+| `-out decrypted.txt` | Decrypted output                     |
+| `-K`                 | decryption key in hexadecimal        |
+| `-iv`                | Initialization vector in hexadecimal |
+
+### Discussion
+
+I used `OpenSSL` to decrypt the `output.enc` file from Task 1. I used the same encryption key and IV to decrypt the file. The decrypted data was saved in a new file called `decrypted.txt`. This allowed me to recover the original text from `input.txt`.
 
 ## Task-3 
 
