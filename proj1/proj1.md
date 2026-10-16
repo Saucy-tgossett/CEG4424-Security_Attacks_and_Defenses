@@ -66,7 +66,6 @@ I used `openssl` to decrypt the `output.enc` file from Task 1. I used the same e
 
 I used the `diff` command to compare the original `input.txt` file with the `decrypted.txt` file from Task 2. The command returned no output, meaning the two files were identical. This confirmed that the decryption was successful.
 
-\newpage
 
 ## Task-4
 
@@ -78,7 +77,6 @@ I used the `diff` command to compare the original `input.txt` file with the `dec
 
 I used `openssl` to generate a SHA256 hash of the `input.txt` file. The command created a 256 bit hash based on the contents of the file. The hash was displayed to the terminal.
 
-\newpage
 
 ## Task-5: 
 
