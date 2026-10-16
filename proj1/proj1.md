@@ -25,7 +25,7 @@
 
 ### Discussion
 
-I used `OpenSSL` to encrypt `input.txt` using AES-128 in CBC mode. I used a 128-bit encryption key and IV to encrypt the file. The encrypted data was saved in a new file called `output.enc`. I used the `ls -l` command to check that the file was created successfully.
+I used `OpenSSL` to encrypt `input.txt` using AES128 in CBC mode. I used a 128 bit encryption key and IV to encrypt the file. The encrypted data was saved in a new file called `output.enc`. I used the `ls -l` command to check that the file was created successfully.
 
 
 ## Task-2
@@ -58,11 +58,19 @@ I used `OpenSSL` to decrypt the `output.enc` file from Task 1. I used the same e
 
 ![Image3](images/image3.png)
 
+### Discussion
+
+I used the `diff` command to compare the original `input.txt` file with the `decrypted.txt` file from Task 2. The command returned no output, meaning the two files were identical. This confirmed that the decryption was successful.
 
 ## Task-4
+
 **Task Description:** Using openssl to generate the cryptographic hash of the input file using SHA256. Please include the complete screenshot of the execution result of the command in your report. The screenshots should include your username, current directory, the command, and the complete execution results.  
 
 ![Image4](images/image4.png)
+
+### Discussion
+
+I used openssl to generate a SHA256 hash of the `input.txt` file. The command created a 256 bit hash based on the contents of the file. The hash was displayed to the terminal.
 
 ## Task-5: 
 
@@ -70,8 +78,16 @@ I used `OpenSSL` to decrypt the `output.enc` file from Task 1. I used the same e
 
 ![Image5](images/image5.png)
 
+### Discussion
+
+I used openssl to generate a SHA512 hash of the `input.txt` file. The command created a 512 bit hash based on the contents of the file. The hash was longer than the SHA256 hash generated in Task 4.
+
 ## Task-6: 
 
 **Task Description:** Using openssl to generate a pair of RSA public and private key pair with 1024 bits. Please include the complete screenshot of the execution result of the command in your report. The screenshots should include your username, current directory, and the complete execution results. 
 
 ![Image6](images/image6.png)
+
+### Discussion
+
+I used openssl to generate a 1024 bit RSA private key. I then used the private key to generate the corresponding public key. Both keys were saved in separate files called `private.pem` and `public.pem`.
