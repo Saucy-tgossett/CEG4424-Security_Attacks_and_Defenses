@@ -35,6 +35,8 @@ I examined the `BOFtest.c` source code and found that line 17, `strcpy(c, bar);`
 
 ![](images/Tsk2-3.png)
 
+\newpage
+
 ### Command Breakdown
 
 | Part | Meaning |
@@ -75,7 +77,6 @@ This happened because the character array `c` only has 12 bytes of space. Since 
 
 I examined the `Proj2-test.cpp` source code and found that it uses the Crypto++ library to perform an exhaustive key search on AES-encrypted data. The program starts with an initial encryption key and uses four nested loops to test different combinations of the first four characters. It attempts to decrypt the encrypted file using each key combination and checks whether the decrypted text contains valid ASCII characters. When it finds a key that produces ASCII text, it displays the key and decrypted message. The decrypted text is then saved to an output file. This demonstrates how brute-force attacks can be used to recover encrypted information when part of the encryption key is unknown.
 
-\newpage
 
 ## Task - 4
 
@@ -116,9 +117,7 @@ I examined the `Proj2-test.cpp` source code and found that it uses the Crypto++ 
 
 **Output:**
 
-```
 The very next morning the world regained its rainbow of colors as if nothing had ever happened. At first this was a novelty but soon people forgot the world had once been all violet. They forgot the world had once turned yellow, then orange, then pink, and then blue. They returned to saying they felt "blue" or were "green" with envy or had a "green" thumb".
-```
 
 ### Discussion
 
@@ -140,7 +139,6 @@ I executed the `Proj2` program using `00_e` as the encrypted input file and `00_
 
 **Output:**
 
-```
 But with his great wings the dragon took no time in knocking 50 knights from their horses and breathing fire on the rest. He said,
 
 You must think I'm here to fiddle,
@@ -152,7 +150,6 @@ One man alone, only one man,
 With a thousand swords,
 
 That's the plan.
-```
 
 ### Discussion
 
@@ -174,9 +171,7 @@ I executed the program using `01_e` as the encrypted input file and `01_p` as th
 
 **Output:**
 
-```
 The color of the Blue Jay became a big issue because he had such a little bit of blue and the world had such a whole lot of violet. People argued about the importance of that. Some said the Blue Jay must be a very special bird or maybe not a bird at all because he alone had kept his true color. Others said this was silly, that the Blue Jay ate bird seed and drank water and fluffed his feathers and that other than his special color he was still just a bird.
-```
 
 ### Discussion
 
