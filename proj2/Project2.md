@@ -5,7 +5,7 @@
 
 **Task Description:** The `BOFtest.c` is a source C code program. Use a text editor to examine the C source code file without changing it.
 
-![](images/Task1.png){width=95%}
+![](images/Task1.png)
 
 **Which line of code is the source of the buffer overflow vulnerability?**
 
@@ -29,11 +29,11 @@ I examined the `BOFtest.c` source code and found that line 17, `strcpy(c, bar);`
 
 **Number of input characters when the error first occurred:** 12
 
-![](images/Task2-1.png){width=95%}
+![](images/Task2-1.png)
 
-![](images/Task2-2.png){width=95%}
+![](images/Task2-2.png)
 
-![](images/Tsk2-3.png){width=95%}
+![](images/Tsk2-3.png)
 
 ### Command Breakdown
 
@@ -104,7 +104,7 @@ I examined the `Proj2-test.cpp` source code and found that it uses the Crypto++ 
 
 ### Execution 1 - File `00_e`
 
-![](images/Task4-1.png){width=95%}
+![](images/Task4-1.png)
 
 **Commands:**
 
@@ -128,7 +128,7 @@ I executed the `Proj2` program using `00_e` as the encrypted input file and `00_
 
 ### Execution 2 - File `01_e`
 
-![](images/Task4-2.png){width=95%}
+![](images/Task4-2.png)
 
 **Commands:**
 
@@ -162,7 +162,7 @@ I executed the program using `01_e` as the encrypted input file and `01_p` as th
 
 ### Execution 3 - File `02_e`
 
-![](images/Task4-3.png){width=95%}
+![](images/Task4-3.png)
 
 **Commands:**
 
